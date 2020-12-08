@@ -1,0 +1,178 @@
+<div class="container">
+  <!-- partial:partials/_navbar.html -->
+  <!-- partial -->
+  <div class="container-fluid">
+    <!-- partial:partials/_sidebar.html -->
+
+    <!-- partial -->
+    <div class="">
+      <div class="content-wrapper">
+        <div class="row" id="proBanner">
+        </div>
+        <div class="page-header">
+          <h3 class="page-title">
+            <span class="page-title-icon bg-gradient-primary text-white mr-2">
+              <i class="mdi mdi-home"></i>
+            </span> Dashboard </h3>
+            <button _ngcontent-keo-c21="" data-toggle="modal" data-target="#loginModal" class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn float-right">Acessar</button>
+        </div>
+        <div class="col-md-12 grid-margin">
+
+                <div class="card">
+                  <h4 class=" m-4 card-title float-left">Vagas</h4>
+                  <div class="card-body">
+                    <div class="container">
+                          <div class="row">
+                                <div class=" col-md-3">
+                                  <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Administração</h4></button>
+
+                                </div>
+                                <div class=" col-md-3">
+                                 <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Arquitetura</h4></button>
+                                </div>
+                                <div class=" col-md-3">
+                                  <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Ciências Aeronáuticas</h4></button>
+                                </div>
+                                <div class="col-md-3">
+                                  <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Direito</h4></button>
+                                </div>
+
+                          </div>
+                          <div class="row">
+                                <div class="col-md-3">
+                                  <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Educação Física</h4></button>
+
+                                </div>
+                                <div class="col-md-3">
+                                 <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Enfermagem</h4></button>
+                                </div>
+                                <div class="col-md-3">
+                                  <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Engebharia Civil</h4></button>
+                                </div>
+                                <div class="col-md-3">
+                                  <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Farmácia</h4></button>
+                                </div>
+
+                          </div>
+                          <div class="row">
+                                <div class="col-md-3">
+                                  <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Nutrição</h4></button>
+
+                                </div>
+                                <div class="col-md-3">
+                                 <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Odontologia</h4></button>
+                                </div>
+                                <div class="col-md-3">
+                                  <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Psicologia</h4></button>
+                                </div>
+                                <div class="col-md-3">
+                                  <button type="button" class="btn btn-link btn-rounded btn-fw" data-toggle="modal" data-target="#vagaModal"><h4 class=" m-4 card-title">Sistemas de Informação</h4></button>
+                                </div>
+
+                          </div>
+
+
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
+</div>
+<script src="./assets/js/hoverable-collapse.js"></script>
+
+<script src="./assets/js/off-canvas.js"></script>
+<script src="./assets/js/dashboard.js"></script>
+
+<!--modal vaga-->
+<div class="modal fade" id="vagaModal" tabindex="-1" role="dialog" aria-labelledby="vagaModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="vagaModal">Vagas disponíveis</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Disciplina</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Disciplina 01</td>
+                          <td><label class="badge badge-success">Preenchida</label></td>
+                        </tr>
+                        <tr>
+                          <td>Disciplina 01</td>
+                          <td><label class="badge badge-warning">Em processo</label></td>
+                        </tr>
+                        <tr>
+                          <td>Disciplina 01</td>
+                          <td><label class="badge badge-info">Disponivel</label></td>
+                        </tr>
+                        <tr>
+                          <td>Disciplina 01</td>
+                          <td><label class="badge badge-danger">Cancelada</label></td>
+                        </tr>
+                      </tbody>
+                    </table>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="loginModal">Login</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="auth-form-light text-left p-5">
+                <div class="brand-logo">
+
+                </div>
+                <form class="pt-3">
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Matricula">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="mt-3">
+                    <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="/aluno">SIGN IN</a>
+                  </div>
+                  <div class="my-2 d-flex justify-content-between align-items-center">
+                    <div class="form-check">
+                      <label class="form-check-label text-muted">
+                        <input type="checkbox" class="form-check-input"> Keep me signed in <i class="input-helper"></i></label>
+                    </div>
+                    <a href="#" class="auth-link text-black">Forgot password?</a>
+                  </div>
+                  <div class="mb-2">
+
+                  </div>
+
+                </form>
+              </div>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+

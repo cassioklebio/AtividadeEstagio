@@ -1,0 +1,418 @@
+<div class="container">
+  <app-header></app-header>
+  <!-- partial:partials/_navbar.html -->
+  <br>
+  <br>
+  <!-- partial -->
+  <div class="mt-3  ">
+    <!-- partial:partials/_sidebar.html -->
+
+    <!-- partial -->
+    <div class="">
+      <div class="content-wrapper">
+        <div class="page-header">
+          <h3 class="page-title">
+            <span class="page-title-icon bg-gradient-primary text-white mr-2">
+              <i class="mdi mdi-home"></i>
+            </span> Dashboard </h3>
+
+        </div>
+        <div class="row">
+          <div class="col-md-5 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="clearfix">
+                  <h4 class="card-title float-left">Cadastrar Vagas</h4>
+                  <div id="visit-sale-chart-legend"
+                    class="rounded-legend legend-horizontal legend-top-right float-right"></div>
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Profile</th>
+                      <th>Created</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>12 May 2017</td>
+                      <td><label class="badge badge-danger">Pendente</label></td>
+                    </tr>
+                    <tr>
+                      <td>Messsy</td>
+                      <td>15 May 2017</td>
+                      <td><label class="badge badge-warning">Em processo</label></td>
+                    </tr>
+                    <tr>
+                      <td>John</td>
+                      <td>14 May 2017</td>
+                      <td><label class="badge badge-info">Publicado</label></td>
+                    </tr>
+                    <tr>
+                      <td>Peter</td>
+                      <td>16 May 2017</td>
+                      <td><label class="badge badge-success">Completed</label></td>
+                    </tr>
+                    <tr>
+                      <td>Dave</td>
+                      <td>20 May 2017</td>
+                      <td><label class="badge badge-warning">In progress</label></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <canvas id="visit-sale-chart" class="mt-4"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class=" row add-items d-flex">
+                  <h4 class="card-title col-md-10">Minha Presença</h4>
+                  <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn float-right "
+                    data-toggle="modal" data-target="#minhaPresencaModal">Add</button>
+                </div>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th> # </th>
+                        <th> Name </th>
+                        <th> Dia </th>
+                        <th> Status </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> 1 </td>
+                        <td> Herman Beck </td>
+                        <td> May 15, 2015 </td>
+                        <td>
+                          <label class="badge badge-gradient-success">Presente</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> 2 </td>
+                        <td> Messsy Adam </td>
+                        <td> Jul 01, 2015 </td>
+                        <td>
+                          <label class="badge badge-gradient-danger">Faltou</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> 3 </td>
+                        <td> John Richards </td>
+                        <td> Apr 12, 2015 </td>
+                        <td>
+                          <label class="badge badge-gradient-success">Presente</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> 4 </td>
+                        <td> Peter Meggik </td>
+                        <td> May 15, 2015 </td>
+                        <td>
+                          <label class="badge badge-gradient-success">Presente</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> 5 </td>
+                        <td> Edward </td>
+                        <td> May 03, 2015 </td>
+                        <td>
+                          <label class="badge badge-gradient-success">Presente</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> 5 </td>
+                        <td> Ronald </td>
+                        <td> Jun 05, 2015 </td>
+                        <td>
+                          <label class="badge badge-gradient-success">Presente</label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 grid-margin">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Meus Orientados</h4>
+                <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn float-right "
+                  data-toggle="modal" data-target="#atendimentoModal">Add</button>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th> Aluno </th>
+                        <th> Assunto </th>
+                        <th> Status </th>
+                        <th> Last Update </th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          David Grey </td>
+                        <td> Fund is not recieved </td>
+                        <td>
+                          <label class="badge badge-gradient-success">Feito</label>
+                        </td>
+                        <td> Dec 5, 2017 </td>
+
+                      </tr>
+                      <tr>
+                        <td>
+                          Stella Johnson </td>
+                        <td> High loading time </td>
+                        <td>
+                          <label class="badge badge-gradient-warning"> Em processo</label>
+                        </td>
+                        <td> Dec 12, 2017 </td>
+
+                      </tr>
+                      <tr>
+                        <td>
+                          Marina Michel </td>
+                        <td> Website down for one week </td>
+                        <td>
+                          <label class="badge badge-gradient-info">Em espera</label>
+                        </td>
+                        <td> Dec 16, 2017 </td>
+
+                      </tr>
+                      <tr>
+                        <td>
+                          John Doe </td>
+                        <td> Loosing control on server </td>
+                        <td>
+                          <label class="badge badge-gradient-danger">Cancelado pelo aluno</label>
+                        </td>
+                        <td> Dec 3, 2017 </td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class=" row add-items d-flex">
+                  <h4 class="card-title col-md-9">Meus Documentos </h4>
+                  <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn float-right "
+                    data-toggle="modal" data-target="#uploadArquivoModal">Add</button>
+                </div>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th> Documento </th>
+                        <th> Enviado para </th>
+                        <th> Status </th>
+                        <th>Data do Envia </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <i class="mdi mdi-file-pdf menu-icon"></i> Termo de compromisso do monitor.pdf </td>
+                        <td> Coordenação de Monitoria </td>
+                        <td>
+                          <label class="badge badge-gradient-success">DONE</label>
+                        </td>
+                        <td> Dec 5, 2017 </td>
+
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="mdi mdi-file-pdf menu-icon"></i> Termo de compromisso do monitor.pdf </td>
+                        <td> Coordenação de Monitoria </td>
+                        <td>
+                          <label class="badge badge-gradient-danger">REJECTED</label>
+                        </td>
+                        <td> Dec 5, 2017 </td>
+
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="mdi mdi-file-pdf menu-icon"></i> Termo de compromisso do monitor.pdf </td>
+                        <td> Coordenação de Monitoria </td>
+                        <td>
+                          <label class="badge badge-gradient-info">ON HOLD</label>
+                        </td>
+                        <td> Dec 5, 2017 </td>
+
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="mdi mdi-file-pdf menu-icon"></i> Termo de compromisso do monitor.pdf </td>
+                        <td> Coordenação de Monitoria </td>
+                        <td>
+                          <label class="badge badge-gradient-success">DONE</label>
+                        </td>
+                        <td> Dec 5, 2017 </td>
+
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="mdi mdi-file-pdf menu-icon"></i> Termo de compromisso do monitor.pdf </td>
+                        <td> Coordenação de Monitoria </td>
+                        <td>
+                          <label class="badge badge-gradient-warning">PROGRESS</label>
+                        </td>
+                        <td> Dec 5, 2017 </td>
+
+                      </tr>
+
+
+
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+      <footer class="footer">
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+          <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2017 <a
+              target="_blank">LTI</a>. All rights reserved.</span>
+          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Desenvolvido por: Cássio KLebio
+            Pereira Lins <i class="mdi mdi-account-check text-danger"></i></span>
+        </div>
+      </footer>
+      <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Atendimentos-->
+<div class="modal fade" id="atendimentoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Adicionar Atendimentos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Registro de presença -->
+<div class="modal fade" id="minhaPresencaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registre sua Presença</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="forms-sample">
+          <div class="form-group">
+            <label for="presencaInput">Data</label>
+            <input class="form-control" class="form-control" id="presencaInput" placeholder="dd/mm/yyyy">
+          </div>
+          <button type="submit" class="btn btn-gradient-primary mr-2">Salvar Presença</button>
+          <button class="btn btn-light" data-dismiss="modal">Cancel</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal upload de arquivo -->
+<div class="modal fade" id="uploadArquivoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Envio de Arquivo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="forms-sample">
+          <div class="form-group">
+            <label for="exampleSelectGender">Enviar para</label>
+            <select class="form-control" id="exampleSelectGender">
+              <option>Coordenação de monitoria</option>
+              <option>Coordenação de curso</option>
+              <option>professor</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label>File upload</label>
+            <input type="file" name="img[]" class="file-upload-default">
+            <div class="input-group">
+              <input type="text" class="form-control file-upload-info" placeholder="Upload de arquivo">
+              <span class="input-group-append">
+                <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
+              </span>
+            </div>
+          </div>
+
+
+          <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+          <button class="btn btn-light">Cancel</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
